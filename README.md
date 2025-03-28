@@ -4,61 +4,86 @@ A real-time cryptocurrency tracking application that displays market data for to
 
 🔗 **Live Demo:** [Crypto Currency Tracker](cryptotrakz.netlify.app)
 
-Crypto Currency Tracker
-A real-time cryptocurrency tracking web application that displays market data for top cryptocurrencies using the CoinGecko API.
+## Features
 
-🔗 Live Demo: Crypto Currency Tracker
+- Real-time cryptocurrency data from CoinGecko API
+- Search functionality by cryptocurrency name or symbol
+- Sort cryptocurrencies by:
+  - Market Cap
+  - Percentage Change (24h)
+- Display key metrics:
+  - Current Price
+  - 24h Price Change
+  - Market Cap
+  - Trading Volume
+- Visual indicators for price changes (green/red)
+- Cryptocurrency icons
+- Responsive design
 
-📌 Features
-✅ Real-time cryptocurrency data from CoinGecko API
-✅ Search functionality to filter by cryptocurrency name or symbol
-✅ Sorting options for:
+## Tech Stack
 
-Market Cap (highest to lowest)
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- CoinGecko API
 
-24-hour Percentage Change (highest to lowest)
-✅ Key metrics displayed:
+## API Integration
 
-Current Price
+The application uses the CoinGecko API v3 endpoint:
+```https:%2F%2Fapi.coingecko.com%2Fapi%2Fv3%2Fcoins%2Fmarkets%60%60%60
 
-24h Price Change
+Data refreshes on page load and includes:
+- Top 10 cryptocurrencies by market cap
+- USD currency pairing
+- 24-hour price change data
 
-Market Cap
+## Key Functions
 
-Trading Volume
-✅ Visual indicators for price changes (green for up, red for down)
-✅ Cryptocurrency icons for better visualization
-✅ Fully responsive design
+1. **Data Fetching**
+   - Fetches real-time data from CoinGecko API
+   - Error handling for API requests
 
-🛠 Tech Stack
-Frontend: HTML5, CSS3, JavaScript (Vanilla)
+2. **Search Functionality**
+   - Case-insensitive search
+   - Filters by both name and symbol
+   - Real-time filtering as you type
 
-API: CoinGecko API
+3. **Sorting Features**
+   - Market Cap sorting (highest to lowest)
+   - 24h Price Change sorting (highest to lowest)
 
-🔗 API Integration
-The application fetches real-time data from the CoinGecko API v3:
+## Local Development
 
-bash
-Copy
-Edit
-https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false
-📊 Data Includes:
-✔ Top 10 cryptocurrencies by market cap
-✔ USD currency pairing
-✔ 24-hour price change data
+1. Clone the repository
+2. Open `index.html` in your browser
+3. No build process required
 
-⚡ Key Features & Functionality
-📡 Data Fetching
-Uses fetch() to retrieve live market data
+## Deployment
 
-Handles API errors and rate limits gracefully
+This project is deployed on Netlify. To deploy your own version:
 
-🔎 Search Functionality
-Case-insensitive search
+1. Fork this repository
+2. Create a Netlify account
+3. Connect your repository to Netlify
+4. Deploy
 
-Filters results in real-time based on cryptocurrency name or symbol
+## Future Enhancements
 
-📊 Sorting Options
-Sorts by Market Cap (highest to lowest)
+- Add more cryptocurrencies to the list
+- Implement real-time price updates
+- Add historical price charts
+- Include additional sorting options
+- Add portfolio tracking features
 
-Sorts by 24h Price Change (highest to lowest)
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Acknowledgments
+
+- Data provided by [CoinGecko API](https://www.coingecko.com/en/api)
+- Deployed with [Netlify](https://netlify.com)#
