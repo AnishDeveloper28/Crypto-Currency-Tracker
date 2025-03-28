@@ -1,89 +1,78 @@
-# Crypto Currency Tracker
+💰 Crypto Currency Tracker
+🚀 Live Demo: https://cryptotrakz.netlify.app/
 
-A real-time cryptocurrency tracking application that displays market data for top cryptocurrencies.
+A real-time cryptocurrency tracking application that fetches market data from CoinGecko API. This app allows users to search, sort, and view key market metrics for top cryptocurrencies.
 
-🔗 **Live Demo:** [Crypto Currency Tracker](cryptotrakz.netlify.app)
+🚀 Features
+✅ Live cryptocurrency data from CoinGecko API
+✅ Search functionality by name or symbol
+✅ Sorting options for:
 
-## Features
+Market Cap (high to low)
 
-- Real-time cryptocurrency data from CoinGecko API
-- Search functionality by cryptocurrency name or symbol
-- Sort cryptocurrencies by:
-  - Market Cap
-  - Percentage Change (24h)
-- Display key metrics:
-  - Current Price
-  - 24h Price Change
-  - Market Cap
-  - Trading Volume
-- Visual indicators for price changes (green/red)
-- Cryptocurrency icons
-- Responsive design
+24h Percentage Change (high to low)
+✅ Key metrics displayed:
 
-## Tech Stack
+Current Price
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- CoinGecko API
+24h Price Change
 
-## API Integration
+Market Cap
 
-The application uses the CoinGecko API v3 endpoint:
-```https:%2F%2Fapi.coingecko.com%2Fapi%2Fv3%2Fcoins%2Fmarkets%60%60%60
+Trading Volume
+✅ Color indicators for price changes (green = up, red = down)
+✅ Cryptocurrency icons for better visualization
+✅ Responsive design for all devices
 
-Data refreshes on page load and includes:
-- Top 10 cryptocurrencies by market cap
-- USD currency pairing
-- 24-hour price change data
+🛠 Tech Stack
+💻 HTML, CSS, JavaScript – Structuring, styling & functionality
+🔗 CoinGecko API – Fetching real-time market data
 
-## Key Functions
+🔗 API Integration
+Fetching data from CoinGecko API v3:
 
-1. **Data Fetching**
-   - Fetches real-time data from CoinGecko API
-   - Error handling for API requests
+bash
+Copy
+Edit
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false
+📌 Future Enhancements
+🔹 Implement real-time price updates without refresh
+🔹 Add historical price charts for analysis
+🔹 Expand to more than top 10 cryptocurrencies
+🔹 Add portfolio tracking feature
 
-2. **Search Functionality**
-   - Case-insensitive search
-   - Filters by both name and symbol
-   - Real-time filtering as you type
+📌 How to Run
+1️⃣ Clone the Repository
 
-3. **Sorting Features**
-   - Market Cap sorting (highest to lowest)
-   - 24h Price Change sorting (highest to lowest)
+sh
+Copy
+Edit
+git clone https://github.com/AnishDeveloper28/Crypto-Currency-Tracker.git
+2️⃣ Navigate to the project folder
 
-## Local Development
+sh
+Copy
+Edit
+cd Crypto-Currency-Tracker
+3️⃣ Open index.html in your browser (No server required).
 
-1. Clone the repository
-2. Open `index.html` in your browser
-3. No build process required
+🌍 Deployment
+🚀 Deployed on Netlify. To deploy your own:
 
-## Deployment
+Fork this repository
 
-This project is deployed on Netlify. To deploy your own version:
+Create a Netlify account
 
-1. Fork this repository
-2. Create a Netlify account
-3. Connect your repository to Netlify
-4. Deploy
+Connect your GitHub repo
 
-## Future Enhancements
+Click Deploy
 
-- Add more cryptocurrencies to the list
-- Implement real-time price updates
-- Add historical price charts
-- Include additional sorting options
-- Add portfolio tracking features
+🤝 Contributing
+Contributions are welcome! If you have ideas for improvements, feel free to fork the repo and submit a pull request.
 
-## Contributing
+📜 License
+📝 This project is open-source under the MIT License.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Acknowledgments
-
-- Data provided by [CoinGecko API](https://www.coingecko.com/en/api)
-- Deployed with [Netlify](https://netlify.com)#
+🙏 Acknowledgments
+💡 Data provided by CoinGecko API
+💡 Deployed with Netlify
